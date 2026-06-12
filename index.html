@@ -119,6 +119,27 @@
   .hero{padding-top:64px;padding-bottom:30px;text-align:center;}
   .hero .lead{margin:26px auto 34px;}
 
+  /* ── photo hero (Editorial Left) ── */
+  .phero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;background:#1a0a16;}
+  .phero .pbg{position:absolute;inset:0;background:url('https://res.cloudinary.com/donbuqwxp/image/upload/v1781292700/CLEAR_YOUR_MONEY_BLOCKS_qno6rm.jpg') center/cover no-repeat;z-index:0;}
+  .phero .pscrim{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(26,10,22,.94) 0%,rgba(26,10,22,.62) 44%,rgba(26,10,22,.12) 100%);}
+  .phero .pfade{position:absolute;left:0;right:0;bottom:0;height:80px;z-index:1;background:linear-gradient(0deg,#fff 0%,rgba(255,255,255,0) 100%);}
+  .phero-content{position:relative;z-index:2;width:100%;max-width:1040px;margin:0 auto;padding:84px 40px;}
+  .phero-content .inner{max-width:560px;}
+  .phero .eyebrow{color:#EBA9DF;}
+  .phero h1{color:#fff;}
+  .phero h1 .now{color:#EBA9DF;font-style:italic;}
+  .phero-sub{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(20px,2.6vw,28px);line-height:1.25;color:rgba(255,255,255,.92);margin-top:16px;max-width:520px;}
+  .phero .cta{margin-top:30px;box-shadow:0 12px 34px rgba(0,0,0,.42);}
+  .phero .micro{color:rgba(255,255,255,.62);}
+  .intro{padding:56px 0 6px;}
+  @media(max-width:640px){
+    .phero{min-height:580px;}
+    .phero .pscrim{background:linear-gradient(90deg,rgba(26,10,22,.93) 0%,rgba(26,10,22,.76) 58%,rgba(26,10,22,.5) 100%);}
+    .phero-content{padding:64px 24px;}
+    .phero .cta{width:100%;justify-content:center;}
+  }
+
   /* ── mockup image placeholder ── */
   .mockup{
     margin:54px auto 0;
@@ -210,28 +231,29 @@
 </head>
 <body>
 
-<!-- ════════════ HERO ════════════ -->
-<section class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Badass Alchemy <span class="dot">✦</span> The Art of Receiving</div>
-    <h1>Clear Your<br>Money Blocks</h1>
-    <div class="sub-serif">Learn the art of receiving.</div>
-    <p class="lead">
-      You're running a money story you didn't write. You inherited it — from your parents, your
-      childhood, the people around you — before you were old enough to choose it. And it's still
-      quietly deciding how much you're allowed to have.
-    </p>
-    <a class="cta" href="https://www.skool.com/baddie-society-6535/classroom/7c461898?md=555859fc15ff4b9d8c4f78487c900644" target="_blank" rel="noopener">
-      Get Instant Access <span class="price">$27</span>
-    </a>
-    <div class="micro">Instant access inside The Baddie Society</div>
+<!-- ════════════ HERO · PHOTO (Editorial Left) ════════════ -->
+<header class="phero">
+  <div class="pbg"></div>
+  <div class="pscrim"></div>
+  <div class="phero-content">
+    <div class="inner">
+      <div class="eyebrow">Badass Alchemy <span class="dot">✦</span> The Art of Receiving</div>
+      <h1>Clear Your<br>Money Blocks <span class="now">Now.</span></h1>
+      <p class="phero-sub">Learn how to stop blocking your abundance — by learning how to receive.</p>
+      <a class="cta" href="https://www.skool.com/baddie-society-6535/classroom/7c461898?md=555859fc15ff4b9d8c4f78487c900644" target="_blank" rel="noopener">
+        Get Instant Access <span class="price">$27</span>
+      </a>
+      <div class="micro">Instant access inside The Baddie Society</div>
+    </div>
+  </div>
+  <div class="pfade"></div>
+</header>
 
-    <!-- ┌─────────────────────────────────────────────────────────┐
-         │  SWAP YOUR MOCKUP HERE                                   │
-         │  Replace the whole <div class="mockup">…</div> below     │
-         │  with:  <div class="mockup"><img src="YOUR_IMAGE_URL"    │
-         │         alt="Clear Your Money Blocks"></div>             │
-         └─────────────────────────────────────────────────────────┘ -->
+<!-- ════════════ INTRO · product + hook ════════════ -->
+<section class="intro">
+  <div class="wrap center">
+    <p class="lead center">Money won't hold. The wins don't stick. The income won't stay steady. There's a reason it keeps happening — and it's not your strategy, and it's not your hustle.</p>
+    <!-- SWAP MOCKUP: replace the src below with your image URL -->
     <div class="mockup">
       <img src="https://res.cloudinary.com/donbuqwxp/image/upload/v1781046282/CLEAR_YOUR_MONEY_BLOCKS-2_slrnr1.png" alt="Clear Your Money Blocks — The Art of Receiving">
     </div>
@@ -295,6 +317,7 @@
       <div class="walk-item"><span class="star">✨</span><p>You <b>rewrite the limiting beliefs</b> you inherited into beliefs that let money in.</p></div>
       <div class="walk-item"><span class="star">✨</span><p>You <b>stop sabotaging the win</b> the moment it arrives.</p></div>
       <div class="walk-item"><span class="star">✨</span><p>You <b>trust yourself with money</b> — not as an affirmation, but as something you feel.</p></div>
+      <div class="walk-item"><span class="star">✨</span><p>You walk away with a <b>new mindset that attracts more</b> — clients, cash, opportunity — with ease instead of force.</p></div>
     </div>
   </div>
 </section>
